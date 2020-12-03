@@ -21,9 +21,9 @@ jobs:
 
 #    - name: Use Node.js LTS    # only needed if not the default Node.js should be used
 #      uses: actions/setup-node@v1
+##      uses: actions/setup-node@v2    # v2 still in beta, see: https://github.com/marketplace/actions/setup-node-js-environment
 #      with:
 #        node-version: 12.x
-#      uses: actions/setup-node@v2    # v2 still in beta, see: https://github.com/marketplace/actions/setup-node-js-environment
 
     - name: Install dependencies
       run: npm install
