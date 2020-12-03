@@ -1,4 +1,3 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
 name: Node.js CI
@@ -6,8 +5,10 @@ name: Node.js CI
 on:
   push:
     branches: [ tooomm-patch-5 ]
+    paths-ignore: [ '**.md' ]
   pull_request:
     branches: [ master ]
+    paths-ignore: [ '**.md' ]
 
 jobs:
   build:
@@ -18,7 +19,7 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v2
 
-#    - name: Use Node.js LTS
+#    - name: Use Node.js LTS    # only needed if not the default Node.js should be used
 #      uses: actions/setup-node@v1
 #      with:
 #        node-version: 12.x
