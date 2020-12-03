@@ -30,8 +30,8 @@ jobs:
     - name: Build app
       run: npm run build
 
-    - name: Run app
-      run: npm start
+#    - name: Run app
+#      run: npm start
 
     - name: Run test
       run: npm test
