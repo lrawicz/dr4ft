@@ -18,10 +18,10 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v2
 
-    - name: Use Node.js LTS
-      uses: actions/setup-node@v1
-      with:
-        node-version: 12.x
+#    - name: Use Node.js LTS
+#      uses: actions/setup-node@v1
+#      with:
+#        node-version: 12.x
 #      uses: actions/setup-node@v2    # v2 still in beta, see: https://github.com/marketplace/actions/setup-node-js-environment
 
     - name: Install dependencies
